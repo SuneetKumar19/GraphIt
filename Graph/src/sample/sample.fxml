@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane prefHeight="2432.0" prefWidth="1312.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <content>
+      <AnchorPane fx:id="weightv" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2396.0" prefWidth="1265.0" style="-fx-background-color: #d1e388;">
+         <children>
+            <TextField fx:id="addname" layoutX="14.0" layoutY="93.0" prefHeight="22.0" prefWidth="69.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Button fx:id="b" contentDisplay="TOP" graphicTextGap="6.0" layoutX="81.0" layoutY="147.0" mnemonicParsing="false" onAction="#addVertex" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: #4A4D4C;" text="Add" textFill="#fcfafa" textOverrun="WORD_ELLIPSIS">
+               <cursor>
+                  <Cursor fx:constant="NE_RESIZE" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="96.0" layoutY="23.0" prefHeight="26.0" prefWidth="140.0" text="Enter Vertex" textFill="#1b1a1a">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="376.0" layoutY="72.0" text="From" textFill="#070707" />
+            <TextField fx:id="addx" layoutX="125.0" layoutY="93.0" prefHeight="26.0" prefWidth="68.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="addy" layoutX="246.0" layoutY="93.0" prefHeight="26.0" prefWidth="68.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Label layoutX="117.0" layoutY="64.0" text="X-coordinate" textFill="#070707" />
+            <Label layoutX="246.0" layoutY="64.0" text="Y-coordinate" textFill="#0a0a0a" />
+            <Label layoutX="91.0" layoutY="203.0" prefHeight="26.0" prefWidth="126.0" text="Find Vertex" textFill="#141414">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Separator layoutX="-36.0" layoutY="391.0" prefHeight="2.0" prefWidth="1298.0">
+               <effect>
+                  <DropShadow />
+               </effect></Separator>
+            <Separator layoutX="675.0" layoutY="-93.0" orientation="VERTICAL" prefHeight="962.0" prefWidth="0.0">
+               <effect>
+                  <DropShadow height="48.32" radius="18.3475" width="27.07" />
+               </effect></Separator>
+            <TextArea fx:id="output" layoutX="737.0" layoutY="72.0" prefHeight="295.0" prefWidth="476.0" style="-fx-background-color: #808080;">
+               <effect>
+                  <DropShadow color="#0d0d0d" height="113.59" radius="59.71" spread="0.13" width="127.25" />
+               </effect>
+               <font>
+                  <Font size="16.0" />
+               </font></TextArea>
+            <Label layoutX="909.0" layoutY="13.0" prefHeight="46.0" prefWidth="132.0" text="Output" textFill="#111010">
+               <font>
+                  <Font size="34.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="findVertex" layoutX="36.0" layoutY="273.0" prefHeight="26.0" prefWidth="247.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Button fx:id="b1" layoutX="77.0" layoutY="336.0" mnemonicParsing="false" onAction="#FindVertex" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #4A4D4C;" text="Find" textFill="#eeebeb">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Label layoutX="101.0" layoutY="247.0" prefHeight="16.0" prefWidth="106.0" text="Enter name" textFill="#0d0d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="-2.0" layoutY="572.0" prefHeight="7.0" prefWidth="352.0">
+               <effect>
+                  <DropShadow />
+               </effect></Separator>
+            <TextField fx:id="deleteName" layoutX="57.0" layoutY="468.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Label layoutX="65.0" layoutY="445.0" prefHeight="16.0" prefWidth="88.0" text="Enter name" textFill="#0d0d0d" />
+            <Button fx:id="b11" layoutX="77.0" layoutY="516.0" mnemonicParsing="false" onAction="#deleteVertex" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #4A4D4C;" text="Delete" textFill="#f5f2f2">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <TextField fx:id="modifyname" layoutX="22.0" layoutY="729.0" prefHeight="26.0" prefWidth="68.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Button fx:id="button_modify" layoutX="96.0" layoutY="788.0" mnemonicParsing="false" onAction="#modifyDetails" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #4A4D4C;" text="Modify" textFill="#f2eded">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <TextField fx:id="modifyx" layoutX="119.0" layoutY="729.0" prefHeight="26.0" prefWidth="68.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="modifyy" layoutX="228.0" layoutY="729.0" prefHeight="26.0" prefWidth="68.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Label layoutX="21.0" layoutY="710.0" text="New Name" textFill="#171717" />
+            <Label layoutX="117.0" layoutY="710.0" text="X-coordinate" textFill="#111111" />
+            <Label layoutX="221.0" layoutY="710.0" text="Y-coordinate" textFill="#070606" />
+            <TextField fx:id="presentname" layoutX="105.0" layoutY="661.0" prefHeight="26.0" prefWidth="97.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Label layoutX="107.0" layoutY="637.0" text="Present Name" />
+            <Separator layoutX="-7.0" layoutY="185.0" prefHeight="6.0" prefWidth="685.0">
+               <effect>
+                  <DropShadow />
+               </effect></Separator>
+            <Label layoutX="450.0" layoutY="23.0" prefHeight="26.0" prefWidth="92.0" text="Add Edge" textFill="#222020">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="vfrom" layoutX="362.0" layoutY="93.0" prefHeight="26.0" prefWidth="68.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="vto" layoutX="462.0" layoutY="93.0" prefHeight="26.0" prefWidth="68.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="vweight" layoutX="567.0" layoutY="93.0" prefHeight="26.0" prefWidth="68.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Label layoutX="462.0" layoutY="72.0" text="To" textFill="#0d0d0d" />
+            <Button fx:id="b2" layoutX="437.0" layoutY="147.0" mnemonicParsing="false" onAction="#addEdge" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: #4A4D4C;" text="Add" textFill="#ebe9e9">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Label layoutX="567.0" layoutY="72.0" text="Weight" textFill="#171717" />
+            <Label layoutX="15.0" layoutY="64.0" text="Name" textFill="#111111" />
+            <Separator layoutX="347.0" layoutY="-174.0" orientation="VERTICAL" prefHeight="1045.0" prefWidth="0.0">
+               <effect>
+                  <DropShadow />
+               </effect></Separator>
+            <TextField fx:id="findFrom" layoutX="385.0" layoutY="286.0" prefHeight="26.0" prefWidth="97.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="findTo" layoutX="542.0" layoutY="286.0" prefHeight="26.0" prefWidth="97.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Label layoutX="460.0" layoutY="203.0" prefHeight="26.0" prefWidth="140.0" text="Find Edge" textFill="#141414">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="393.0" layoutY="265.0" text="From" textFill="#141414" />
+            <Label layoutX="522.0" layoutY="265.0" text="To" textFill="#171717" />
+            <Button fx:id="b12" layoutX="457.0" layoutY="336.0" mnemonicParsing="false" onAction="#searchEdge" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #4A4D4C;" text="Find" textFill="#f5f2f2">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Separator layoutX="350.0" layoutY="574.0" prefHeight="0.0" prefWidth="904.0">
+               <effect>
+                  <DropShadow />
+               </effect></Separator>
+            <Label layoutX="443.0" layoutY="400.0" prefHeight="39.0" prefWidth="199.0" text="Delete Edge" textFill="#363535">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="fDel" layoutX="379.0" layoutY="470.0" prefHeight="26.0" prefWidth="97.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="tDel" layoutX="529.0" layoutY="470.0" prefHeight="26.0" prefWidth="97.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Label layoutX="410.0" layoutY="445.0" text="From" textFill="#111010" />
+            <Label layoutX="567.0" layoutY="445.0" text="To" textFill="#252424" />
+            <Button fx:id="bx" layoutX="446.0" layoutY="522.0" mnemonicParsing="false" onAction="#DeleteEdge" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #4A4D4C;" text="Delete" textFill="#eee8e8">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Label layoutX="437.0" layoutY="590.0" prefHeight="26.0" prefWidth="140.0" text="Modify Edge">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="nfrom" layoutX="365.0" layoutY="674.0" prefHeight="26.0" prefWidth="97.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="nto" layoutX="519.0" layoutY="674.0" prefHeight="26.0" prefWidth="97.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Label layoutX="393.0" layoutY="653.0" text="From" textFill="#141414" />
+            <Label layoutX="559.0" layoutY="653.0" text="To" textFill="#171717" />
+            <TextField fx:id="nweight" layoutX="433.0" layoutY="729.0" prefHeight="26.0" prefWidth="134.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Label layoutX="468.0" layoutY="710.0" text="New Weight" textFill="#171717" />
+            <Button fx:id="medge" layoutX="446.0" layoutY="788.0" mnemonicParsing="false" onAction="#modifyEdge" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #4A4D4C;" text="Modify" textFill="#f2eded">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Label layoutX="880.0" layoutY="590.0" prefHeight="26.0" prefWidth="140.0" text="Djikstra Path" textFill="#252424">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="dfrom" layoutX="695.0" layoutY="674.0" prefHeight="26.0" prefWidth="134.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="dto" layoutX="854.0" layoutY="674.0" prefHeight="26.0" prefWidth="140.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Button fx:id="b11111" layoutX="754.0" layoutY="788.0" mnemonicParsing="false" onAction="#djkistraPath" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #4A4D4C;" text="Give Path" textFill="#ebe0e0">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Label layoutX="745.0" layoutY="653.0" text="From" textFill="#1b1b1b" />
+            <Label layoutX="891.0" layoutY="653.0" prefHeight="3.0" prefWidth="16.0" text="To" textFill="#0a0a0a" />
+            <TextField fx:id="dirpath" layoutX="695.0" layoutY="470.0" prefHeight="26.0" prefWidth="204.0" text="Enter Path">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="b1211" layoutX="701.0" layoutY="516.0" mnemonicParsing="false" onAction="#ImportFile" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #4A4D4C;" text="Import" textFill="#ebe7e7">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Label layoutX="709.0" layoutY="406.0" prefHeight="26.0" prefWidth="140.0" text="Import Graph" textFill="#141313">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="987.0" layoutY="406.0" prefHeight="26.0" prefWidth="140.0" text="Export Graph" textFill="#111010">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Separator layoutX="935.0" layoutY="391.0" orientation="VERTICAL" prefHeight="183.0" prefWidth="0.0">
+               <effect>
+                  <DropShadow />
+               </effect></Separator>
+            <TextField fx:id="edirpath" layoutX="978.0" layoutY="468.0" prefHeight="26.0" prefWidth="200.0" text="Enter Path">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button fx:id="b12111" layoutX="981.0" layoutY="516.0" mnemonicParsing="false" onAction="#ExportFile" prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #4A4D4C;" text="Export" textFill="#f5efef">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Separator layoutX="-2.0" layoutY="868.0" prefHeight="0.0" prefWidth="1277.0">
+               <effect>
+                  <DropShadow />
+               </effect></Separator>
+            <AnchorPane fx:id="ap" layoutX="-6.0" layoutY="954.0" onMouseClicked="#onclick" prefHeight="1446.0" prefWidth="1265.0" style="-fx-background-color: black;" />
+            <Label layoutX="505.0" layoutY="884.0" prefHeight="61.0" prefWidth="255.0" text="Graph It" textFill="#000000b4" underline="true">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Separator layoutX="-11.0" layoutY="955.0" prefHeight="3.0" prefWidth="1275.0" />
+            <ToggleButton fx:id="toggle" layoutX="824.0" layoutY="893.0" mnemonicParsing="false" onAction="#OnToggle" prefHeight="43.0" prefWidth="151.0" style="-fx-background-color: #8B3BD1;" text="Graph Mode">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ToggleButton>
+            <TextField fx:id="trans" layoutX="1029.0" layoutY="674.0" prefHeight="26.0" prefWidth="140.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Label layoutX="1064.0" layoutY="653.0" prefHeight="16.0" prefWidth="71.0" text="Transition" textFill="#141414" />
+            <Label layoutX="96.0" layoutY="400.0" prefHeight="26.0" prefWidth="140.0" text="Delete Vertex" textFill="#111111">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="96.0" layoutY="590.0" prefHeight="26.0" prefWidth="140.0" text="Modify Vertex" textFill="#1b1a1a">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <ToggleButton fx:id="toggle1" layoutX="1109.0" layoutY="900.0" mnemonicParsing="false" onAction="#stopani" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #8B3BD1;" text="Stop Animation">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+            <ToggleButton fx:id="bclear" layoutX="67.0" layoutY="893.0" mnemonicParsing="false" onAction="#getAll" prefHeight="43.0" prefWidth="151.0" style="-fx-background-color: #8B3BD1;" text="Clear All" underline="true">
+               <effect>
+                  <DropShadow color="#171717" />
+               </effect>
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+<!--            <ToggleButtonGroup layoutX="116.0" layoutY="914.0" selectionType="SINGLE" />-->
+<!--            <ToggleButtonGroup layoutX="925.0" layoutY="901.0" selectionType="SINGLE" />-->
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </content>
+</ScrollPane>
